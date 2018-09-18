@@ -1,0 +1,58 @@
+//---------------------------------------------------------
+// BUTTONS STYLES
+//---------------------------------------------------------
+
+.main-btn,
+.main-btn-contour,
+.btn-icon {
+  .webixtype_form,
+  .webix_img_btn,
+  .webixtype_base {
+    display: inline-block;
+    vertical-align: top;
+    outline: none;
+    text-align: center;
+    border: 2px solid @btn;
+    .border-radius(3px);
+    cursor: pointer;
+    font-family: @main-font;
+    font-size: 16px;
+    line-height: 12px;
+    .transition(all 0.2s ease);
+  }
+}
+
+.main-btn  {
+  .webixtype_form, .webixtype_form:active, .webixtype_form:hover, .webixtype_form:focus,
+  .webix_img_btn, .webix_img_btn:active, .webix_img_btn:hover, .webix_img_btn:focus,
+  .webixtype_base, .webixtype_base:active, .webixtype_base:hover, .webixtype_base:focus {
+    font-weight: 700;
+    color: @white-txt;
+    background: @btn;
+  }
+
+  .webix_icon_btn {
+    color: @white-txt;
+  }
+}
+
+.main-btn-contour {
+  .webixtype_form, .webixtype_form:active, .webixtype_form:hover, .webixtype_form:focus,
+  .webixtype_base, .webixtype_base:active, .webixtype_base:hover, .webixtype_base:focus{
+    font-weight: 700;
+    background: transparent;
+    color: @btn;
+  }
+}
+
+.btn-icon {
+  .webix_img_btn {
+    font-weight: 400;
+    color: @white-txt;
+    background: @btn;
+  }
+
+  .webix_icon_btn {
+    color: @white-txt;
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "budget-support",
+  "plural": "budget-support",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "programType": {
+      "type": "number",
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "required": true
+    },
+    "fiscalYear": {
+      "type": "string",
+      "required": true
+    },
+    "programm-support": {
+      "type": "string",
+      "required": true
+    },
+    "component": {
+      "type": "string",
+      "required": true
+    },
+    "subcomponent": {
+      "type": "string",
+      "required": true
+    },
+    "programCode": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "percentageApproved": {
+      "type": "number",
+      "required": true
+    },
+    "amountApproved": {
+      "type": "number",
+      "required": true
+    },
+    "remaningBalance": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

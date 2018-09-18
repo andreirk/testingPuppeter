@@ -1,0 +1,130 @@
+//---------------------------------------------------------
+// MIXINS
+//---------------------------------------------------------
+
+.font-title1() {
+  font-family: @heading-font;
+  font-size: 28px;
+  font-weight: 700;
+  color: @theme-color;
+}
+
+.font-title2() {
+  font-family: @heading-font;
+  font-size: 18px;
+  font-weight: 700;
+  color: @theme-color;
+}
+
+
+////////////////////
+
+.cf {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.box-sizing (@type: border-box) {
+  -webkit-box-sizing: @type;
+  -moz-box-sizing:    @type;
+  box-sizing:         @type;
+}
+
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
+.box-shadow2 (@string1, @string2) {
+  -webkit-box-shadow: @string1, @string2;
+  -moz-box-shadow:    @string1, @string2;
+  box-shadow:         @string1, @string2;
+}
+
+.text-shadow (@string) {
+  -webkit-text-shadow: @string;
+  -moz-text-shadow:    @string;
+  text-shadow:         @string;
+}
+
+.border-radius (@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  -o-border-radius: 	 @radius;
+  border-radius:         @radius;
+}
+.border-radiuses (@topleft: 0, @topright: 0, @bottomright: 0, @bottomleft: 0) {
+  -webkit-border-top-right-radius:    @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius:  @bottomleft;
+  -webkit-border-top-left-radius:     @topleft;
+  -moz-border-radius-topright:        @topright;
+  -moz-border-radius-bottomright:     @bottomright;
+  -moz-border-radius-bottomleft:      @bottomleft;
+  -moz-border-radius-topleft:         @topleft;
+  border-top-right-radius:            @topright;
+  border-bottom-right-radius:         @bottomright;
+  border-bottom-left-radius:          @bottomleft;
+  border-top-left-radius:             @topleft;
+}
+
+.background-size (@type) {
+  -webkit-background-size: @type;
+  -moz-background-size:    @type;
+  background-size:         @type;
+}
+
+.transition (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition:    @transition;
+  -ms-transition:     @transition;
+  -o-transition:      @transition;
+  transition:         @transition;
+}
+.transitions2 (@transition1, @transition2) {
+  -webkit-transition: @transition1, @transition2;
+  -moz-transition:    @transition1, @transition2;
+  -ms-transition:     @transition1, @transition2;
+  -o-transition:      @transition1, @transition2;
+  transition:         @transition1, @transition2;
+}
+
+.transition-delay(@string) {
+  -webkit-transition-delay: @string;
+  -o-transition-delay:      @string;
+  -moz-transition-delay:    @string;
+  transition-delay:         @string;
+}
+
+.transform(@string){
+  -webkit-transform: @string;
+  -moz-transform: 	 @string;
+  -ms-transform: 	 @string;
+  -o-transform:      @string;
+  transform: 		 @string;
+}
+
+.transform-origin(@string){
+  -webkit-transform-origin:  @string;
+  -moz-transform-origin: 	 @string;
+  -ms-transform-origin: 	 @string;
+  -o-transform-origin:       @string;
+  transform-origin: 		 @string;
+}
+
+.backface-visibility(@string){
+  -webkit-backface-visibility: @string;
+  backface-visibility:         @string;
+}
+
+.perspective(@string) {
+  -webkit-perspective: @string;
+  perspective:         @string;
+}

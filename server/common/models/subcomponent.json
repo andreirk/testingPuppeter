@@ -1,0 +1,22 @@
+{
+  "name": "subcomponent",
+  "plural": "subcomponents",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "value": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,28 @@
+---
+
+plugins:
+  - babel
+
+env:
+  node: true
+
+parser: babel-eslint
+
+extends:
+  - 'airbnb-base'
+
+globals:
+  webix: true
+  $$: true
+
+
+rules:
+  no-console: 1
+  class-methods-use-this:   
+  - error
+  - exceptMethods:
+    - config
+    - init
+  no-unused-expressions: 1
+  import/prefer-default-export: 1
+  no-param-reassign: 1

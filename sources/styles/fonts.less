@@ -1,0 +1,35 @@
+//---------------------------------------------------------
+// Fonts
+//---------------------------------------------------------
+
+.font(@font, @type, @weight, @style, @path){
+
+    @font-face {
+        font-family: @font;
+        src: url('@{path}/@{type}.eot');
+        src: local('@{font} @{type}'),
+            local('@{font}-@{type}'),
+            url('@{path}/@{type}.eot?#iefix') format('embedded-opentype'),
+            url('@{path}/@{type}.woff2') format('woff2'),
+            url('@{path}/@{type}.woff') format('woff'),
+            url('@{path}/@{type}.ttf') format('truetype'),
+            url('@{path}/@{type}.svg#@{font}') format('svg');
+        font-style: @style;
+        font-weight: @weight;
+    }
+}
+
+
+/* font-family: 'SourceSansPro' */
+.font('SourceSansPro', 'Light', 300, normal, '/sources/fonts/SourceSansPro');
+.font('SourceSansPro', 'Regular', 400, normal, '/sources/fonts/SourceSansPro');
+.font('SourceSansPro', 'SemiBold', 600, normal, '/sources/fonts/SourceSansPro');
+.font('SourceSansPro', 'Bold', 700, normal, '/sources/fonts/SourceSansPro');
+.font('SourceSansPro', 'Black', 900, normal, '/sources/fonts/SourceSansPro');
+
+
+/* font-family: 'Merriweather' */
+.font('Merriweather', 'Light', 300, normal, '/sources/fonts/Merriweather');
+.font('Merriweather', 'Regular', 400, normal, '/sources/fonts/Merriweather');
+.font('Merriweather', 'Bold', 700, normal, '/sources/fonts/Merriweather');
+.font('Merriweather', 'Black', 900, normal, '/sources/fonts/Merriweather');

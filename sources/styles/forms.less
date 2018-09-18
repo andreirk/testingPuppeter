@@ -1,0 +1,124 @@
+//---------------------------------------------------------
+// FORMS FIELDS STYLES
+//---------------------------------------------------------
+
+/* select-field, select-btn-field */
+.select-field,
+.select-btn-field {
+  .webix_inp_label, .webix_inp_top_label, .webix_label_right {
+    color: @black-txt;
+    font-weight: 700;
+  }
+
+  .webix_inp_static,
+  input {
+    border-color: @fields-border;
+	.border-radius(3px);
+    color: @black-txt;
+    cursor: pointer;
+
+    &:focus {
+      .box-shadow(none);
+	  border-color: @fields-border;
+      background: @base-bg;
+    }
+  }
+
+  .webix_placeholder {
+	color: @black-txt;
+  }
+}
+
+.select-field {
+  span.webix_input_icon {
+    color: @theme-color-lighten;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.select-btn-field {
+  span.webix_input_icon {
+    background: @theme-color;
+    font-size: 19px;
+    color: @white-txt;
+    padding-left: 7px;
+    cursor: pointer
+  }
+}
+
+
+/* text-field and textarea-field */
+.text-field,
+.textarea-field {
+  .webix_inp_label, .webix_inp_top_label, .webix_label_right {
+    color: @black-txt;
+    font-weight: 700;
+  }
+
+  input,
+  textarea {
+    border-color: @fields-border;
+    .border-radius(3px);
+    font-size: 14px;
+    color: @black-txt;
+
+    &:focus {
+      border-color: @fields-border;
+      .box-shadow(none);
+    }
+
+    &::-webkit-input-placeholder {font-size: 14px; color: @placeholder-color; opacity: 1; transition: opacity 0.4s ease;}
+    &::-moz-placeholder          {font-size: 14px; color: @placeholder-color; opacity: 1; transition: opacity 0.4s ease;}
+    &:-moz-placeholder           {font-size: 14px; color: @placeholder-color; opacity: 1; transition: opacity 0.4s ease;}
+    &:-ms-input-placeholder      {font-size: 14px; color: @placeholder-color; opacity: 1; transition: opacity 0.4s ease;}
+
+    &:focus::-webkit-input-placeholder {font-size: 14px; color: @placeholder-color; opacity: 0; transition: opacity 0.4s ease;}
+    &:focus::-moz-placeholder          {font-size: 14px; color: @placeholder-color; opacity: 0; transition: opacity 0.4s ease;}
+    &:focus:-moz-placeholder           {font-size: 14px; color: @placeholder-color; opacity: 0; transition: opacity 0.4s ease;}
+    &:focus:-ms-input-placeholder      {font-size: 14px; color: @placeholder-color; opacity: 0; transition: opacity 0.4s ease;}
+  }
+}
+
+
+/* checkboxes */
+/*.checkbox-ctrl {
+  .webix_custom_checkbox {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #6E7480;
+    .border-radius(2px);
+    background: none;
+    .box-sizing(border-box);
+    cursor: pointer;
+    .transition(.2s all ease-in-out);
+
+    &:before {
+      content: "\f00c";
+      font-family: 'Fontawesome';
+      font-size: 12px;
+      line-height: 1;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -6.5px 0 0 -6.5px;
+      visibility: hidden;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: #0288D1;
+    }
+  }
+
+  .webix_checkbox_1 .webix_custom_checkbox {
+    background-color: #0288D1;
+    border-color: #0288D1;
+
+    &:before {
+      visibility: visible;
+    }
+  }
+}*/

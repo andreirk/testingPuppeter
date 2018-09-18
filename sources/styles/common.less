@@ -1,0 +1,218 @@
+//---------------------------------------------------------
+// COMMON STYLES
+//---------------------------------------------------------
+
+html, body {
+  font-family: @main-font;
+  font-weight: 400;
+  font-style: normal;
+  color: @main-color;
+}
+
+body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+.webix_view,
+.webix_view * {
+  font-family: @main-font !important;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: @main-color;
+}
+
+.webix_view {
+  .webix_icon, .webix_icon_btn, .webix_input_icon,
+  .webix_accordionitem .webix_accordionitem_header .webix_accordionitem_button,
+  .webix_view .webix_tree_close, .webix_view .webix_tree_open {
+    font-family: FontAwesome !important;
+  }
+}
+
+svg, use {
+  display: block;
+  pointer-events: none; // fix edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/10583086/
+}
+
+svg.svg {
+  display: none;
+}
+
+.hidden-block {
+  display: none !important;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+.image-width-100 {
+  img {
+    width: 100%;
+  }
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+/* LINKS */
+/*a, .link {
+  //color: @link-color;
+  text-decoration: none;
+  .transition(all .2s ease-in-out);
+  cursor: pointer;
+
+  &:visited, &:hover, &:focus {
+
+  }
+}*/
+
+
+/* TITLES */
+.main-title {
+  .font-title1();
+}
+
+
+/* webix popup */
+.webix_view.webix_popup {
+  border-color: @fields-border;
+  .box-shadow(none);
+  .border-radius(3px);
+
+  .webix_list_item {
+    color: @black-txt;
+    .transition(all 0.2s ease-in-out);
+    border: none;
+
+    &:hover, &:focus {
+      background-color: @base-bg;
+    }
+
+    &.webix_selected {
+      color: @black-txt;
+      background: @base-bg;
+    }
+  }
+
+  .webix_cal_body {
+    .webix_cal_today {
+      border-color: @theme-color-lighten;
+      .border-radius(3px);
+    }
+
+    .webix_selected,
+    .webix_cal_select {
+      color: @white-txt;
+      .border-radius(3px);
+      background: @theme-color-lighten;
+
+      .webix_cal_day_inner {
+        color: inherit;
+      }
+    }
+  }
+
+  .webix_cal_footer,
+  .webix_time_footer {
+    .webix_cal_done {
+      background: @theme-color;
+      border-color: @theme-color;
+      .border-radius(3px);
+      .transition(all .2s ease-in-out);
+
+      &:hover, &:focus {
+        background: @theme-color;
+        border-color: @theme-color;
+      }
+    }
+  }
+
+  .webix_cal_icon,
+  .webix_cal_month_name,
+  .webix_cal_time {
+    .transition(all .2s ease-in-out);
+
+    &:hover {
+      color: @theme-color;
+    }
+
+  }
+}
+
+/* webix tables */
+.webix_dtable {
+  border-color: @table-border;
+
+  .webix_ss_header {
+    background: @tables-bg;
+
+    td {
+      font-size: 15px;
+      font-weight: 700;
+      color: @black-txt;
+      background: @tables-bg;
+      border-color: @table-border;
+    }
+    .webix_hcell {
+      font-size: 15px;
+      font-weight: 700;
+      color: @black-txt;
+    }
+  }
+
+  .webix_ss_center {
+    .webix_cell {
+      border-color: @table-border;
+      color: @black-txt;
+    }
+  }
+}
+
+
+/* accordions */
+.webix_view.webix_layout_accordion {
+  background: @main-bg;
+}
+
+.accordion-block {
+  border: 1px solid @block-border;
+
+  .webix_accordionitem_header {
+    border-bottom: none;
+    background: @base-bg;
+
+    .webix_accordionitem_button {
+      color: @theme-color;
+    }
+  }
+
+  .webix_accordionitem_label {
+    .font-title2();
+  }
+
+  &.collapsed {
+    .webix_accordionitem_header {
+      background: @base-bg;
+
+      .webix_accordionitem_button {
+        color: @theme-color;
+      }
+    }
+  }
+}
